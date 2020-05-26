@@ -105,7 +105,7 @@ model Controller
         extent={{-14,-14},{14,14}},
         rotation=90,
         origin={-132,-86})));
-equation 
+equation
   connect(y_throttle, y_throttle)
     annotation (Line(points={{110,0},{110,0}}, color={0,0,127}));
   connect(const.y, y_throttle)

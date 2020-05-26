@@ -107,7 +107,7 @@ model Environment
   Modelica.Mechanics.MultiBody.Parts.Fixed fixed8(animation=false, r={9980,
         100,5})
     annotation (Placement(transformation(extent={{96,-38},{116,-18}})));
-equation 
+equation
   connect(fixed.frame_b, fixedShape.frame_a) annotation (Line(
       points={{-30,16},{-26,16},{-26,18},{-20,18}},
       color={95,95,95},
@@ -147,14 +147,9 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-60,-100},{200,120}})),
       Icon(coordinateSystem(extent={{-60,-100},{200,120}}), graphics={
           Bitmap(extent={{-80,-96},{218,90}}, fileName=
-              "modelica://FinalProject/environment.jpg"), Text(
+              "modelica://RocketLanding/Resources/Images/environment.jpg"),
+                                                          Text(
           extent={{8,116},{134,106}},
           lineColor={0,0,0},
           textString="%name")}));
 end Environment;
-
-
-
-
-
-

@@ -17,7 +17,7 @@ model EntryController
   Modelica.Blocks.Interfaces.RealInput Clock annotation (Placement(
         transformation(rotation=0, extent={{-150,6},{-130,26}}),
         iconTransformation(extent={{-150,6},{-130,26}})));
-equation 
+equation
   connect(greaterThreshold1.u, lessThreshold1.u) annotation (Line(points={{
           -78,2},{-98,2},{-98,30},{-78,30}}, color={0,0,127}));
   connect(and2.y, boostback_thrust1.u[1])
@@ -33,14 +33,10 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-140,-90},{60,110}})), Icon(
         coordinateSystem(extent={{-140,-90},{60,110}}), graphics={
         Bitmap(extent={{-122,-68},{46,50}}, fileName=
-              "modelica://FinalProject/entry.JPG"),
+              "modelica://RocketLanding/Resources/Images/entry.jpg"),
         Text(
           extent={{-98,96},{14,72}},
           lineColor={0,0,0},
           textString="%name"),
         Rectangle(extent={{-140,110},{60,-90}}, lineColor={0,0,0})}));
 end EntryController;
-
-
-
-

@@ -793,7 +793,7 @@ model RetrogradeRocketLanding
 
   GridFinVisualization gridFinVisualization annotation (Placement(
         transformation(rotation=0, extent={{104,78},{124,98}})));
-equation 
+equation
 
   when FirstStage.frame_a.r_0[3] <= 0 then
     terminate("done");

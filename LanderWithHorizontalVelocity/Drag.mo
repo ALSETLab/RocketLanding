@@ -14,13 +14,13 @@ model Drag
   Modelica.Blocks.Interfaces.RealInput Altitude annotation (Placement(
         transformation(extent={{-100,38},{-60,78}}), iconTransformation(extent={{-100,38},
             {-78,60}})));
-equation 
+equation
   AirDensity = max(-(Altitude*0.00013)+1.2,0);
   Drag = (CoefficientofDrag*AirDensity*Velocity^2*Area) * (1/900000);
 
   annotation (Icon(coordinateSystem(preserveAspectRatio=false), graphics={
         Bitmap(extent={{-80,-66},{96,54}}, fileName=
-              "modelica://FinalProject/drag.jpg"),
+              "modelica://RocketLanding/Resources/Images/drag.jpg"),
         Text(
           extent={{-46,96},{54,70}},
           lineColor={0,0,0},
@@ -29,11 +29,3 @@ equation
                                                                  Diagram(
         coordinateSystem(preserveAspectRatio=false)));
 end Drag;
-
-
-
-
-
-
-
-

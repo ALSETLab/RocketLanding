@@ -35,7 +35,7 @@ model BoostBackController
     annotation (Placement(transformation(extent={{-32,16},{-20,28}})));
   Modelica.Blocks.Logical.LessThreshold    lessThreshold(threshold=100)
     annotation (Placement(transformation(extent={{-94,-26},{-74,-6}})));
-equation 
+equation
   connect(and1.u2,greaterThreshold. y) annotation (Line(points={{-59.2,17.2},
           {-70.6,17.2},{-70.6,14},{-73,14}},
                                           color={255,0,255}));
@@ -66,13 +66,10 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-140,-60},{60,140}})), Icon(
         coordinateSystem(extent={{-140,-60},{60,140}}), graphics={
         Bitmap(extent={{-110,-40},{42,110}}, fileName=
-              "modelica://FinalProject/boostback.JPG"),
+              "modelica://RocketLanding/Resources/Images/boostback.jpg"),
         Text(
           extent={{-96,124},{40,84}},
           lineColor={0,0,0},
           textString="%name"),
         Rectangle(extent={{-140,140},{60,-60}}, lineColor={0,0,0})}));
 end BoostBackController;
-
-
-

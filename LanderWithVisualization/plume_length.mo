@@ -14,7 +14,7 @@ model plume_length
     annotation (Placement(transformation(extent={{-10,9},{0,19}})));
   Modelica.Blocks.Interfaces.RealInput u annotation (Placement(
         transformation(rotation=0, extent={{-44,12.5},{-36,17.5}})));
-equation 
+equation
   connect(limiter.u, add.y)
     annotation (Line(points={{27,12},{16.5,12}}, color={0,0,127}));
   connect(const.y, add.u2) annotation (Line(points={{-13.4,-11},{2,-11},{2,
@@ -30,8 +30,3 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-40,-25},{40,25}})), Icon(
         coordinateSystem(extent={{-40,-25},{40,25}})));
 end plume_length;
-
-
-
-
-

@@ -10,7 +10,7 @@ model sky_visualization
     annotation (Placement(transformation(extent={{-172,64},{-160,76}})));
   Modelica.Blocks.Interfaces.RealInput u annotation (Placement(
         transformation(rotation=0, extent={{-190,70},{-170,90}})));
-equation 
+equation
   connect(add.u2, const1.y) annotation (Line(points={{-134.8,49.6},{-137.4,
           49.6},{-137.4,48},{-139.4,48}}, color={0,0,127}));
   connect(add.y, realToInteger.u) annotation (Line(points={{-125.6,52},{
@@ -22,8 +22,3 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-180,-60},{20,140}})), Icon(
         coordinateSystem(extent={{-180,-60},{20,140}})));
 end sky_visualization;
-
-
-
-
-

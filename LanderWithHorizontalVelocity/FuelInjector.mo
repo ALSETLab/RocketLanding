@@ -110,7 +110,7 @@ model FuelInjector
     annotation (Placement(transformation(extent={{102,-32},{130,-8}})));
   Modelica.Blocks.Continuous.Integrator RP1_Total_Volume_Consumption
     annotation (Placement(transformation(extent={{140,-30},{160,-10}})));
-equation 
+equation
   connect(pipe1.port_a, Liquid_Oxygen.ports[1])
     annotation (Line(points={{44,61},{44,70}}, color={0,127,255}));
   connect(LOX_valve.port_a, pipe1.port_b)
@@ -139,17 +139,10 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-50,-110},{240,110}})), Icon(
         coordinateSystem(extent={{-50,-110},{240,110}}), graphics={
         Bitmap(extent={{10,-98},{216,70}}, fileName=
-              "modelica://FinalProject/Fuel_Injector.png"),
+              "modelica://RocketLanding/Resources/Images/Fuel_Injector.png"),
         Text(
           extent={{-6,108},{194,78}},
           lineColor={0,0,0},
           textString="%name"),
         Rectangle(extent={{-50,110},{240,-110}}, lineColor={0,0,0})}));
 end FuelInjector;
-
-
-
-
-
-
-

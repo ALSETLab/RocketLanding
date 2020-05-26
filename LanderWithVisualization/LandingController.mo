@@ -34,7 +34,7 @@ model LandingController
     annotation (Placement(transformation(extent={{-20,8},{-4,24}})));
   Modelica.Blocks.Sources.Constant const1(k=1)
     annotation (Placement(transformation(extent={{-54,-12},{-40,2}})));
-equation 
+equation
   connect(enable.u[1], greaterThreshold.y) annotation (Line(points={{-96,
           -40},{-100,-40},{-100,-42},{-103,-42}}, color={255,0,255}));
   connect(Clock, greaterThreshold.u)
@@ -66,7 +66,7 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-150,-60},{50,140}})), Icon(
         coordinateSystem(extent={{-150,-60},{50,140}}), graphics={
         Bitmap(extent={{-122,-42},{20,108}}, fileName=
-              "modelica://FinalProject/pics/landing.JPG"),
+              "modelica://RocketLanding/Resources/Images/engine1.jpg"),
         Text(
           extent={{-108,134},{18,112}},
           lineColor={0,0,0},

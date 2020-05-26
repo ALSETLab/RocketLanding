@@ -737,7 +737,7 @@ model RetrogradeRocketLanding
     annotation (Placement(transformation(extent={{8,-100},{28,-80}})));
   Drag DragCalc(CoefficientofDrag=0.82)
     annotation (Placement(transformation(extent={{40,-96},{74,-72}})));
-equation 
+equation
 
   when FirstStage.frame_a.r_0[3] <= 0 then
     terminate("done");

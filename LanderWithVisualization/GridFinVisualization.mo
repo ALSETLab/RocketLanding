@@ -6,7 +6,7 @@ model GridFinVisualization
     annotation (Placement(transformation(extent={{1,-2},{7,4}})));
   Modelica.Blocks.Interfaces.RealInput u(unit="rad") annotation (Placement(
         transformation(rotation=0, extent={{-16.5,-9},{-13.5,-7}})));
-equation 
+equation
   connect(to_deg.y, gain.u)
     annotation (Line(points={{-0.5,1},{0.4,1}}, color={0,0,127}));
   connect(u, to_deg.u)
@@ -14,8 +14,3 @@ equation
   annotation (Diagram(coordinateSystem(extent={{-15,-10},{15,10}})), Icon(
         coordinateSystem(extent={{-15,-10},{15,10}})));
 end GridFinVisualization;
-
-
-
-
-

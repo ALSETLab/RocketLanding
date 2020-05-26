@@ -25,7 +25,7 @@ model Engine
     annotation (Placement(transformation(extent={{-68,-54},{-54,-40}})));
 
   parameter Real Max_Thrust = 900000;
-equation 
+equation
   f = {x_gain.y,0,z_gain.y};
 
   connect(realExpression.y,force. force) annotation (Line(points={{43.4,16},{54,
@@ -41,7 +41,8 @@ equation
   connect(z_gain.u, z_throttle) annotation (Line(points={{-69.4,-47},{-76.7,-47},
           {-76.7,-46},{-100,-46}}, color={0,0,127}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false), graphics={
-          Bitmap(extent={{-82,-112},{94,66}},    fileName="modelica://FinalProject/engine.png"),
+          Bitmap(extent={{-82,-112},{94,66}}, fileName=
+              "modelica://RocketLanding/Resources/Images/engine.png"),
           Rectangle(extent={{-100,100},{100,-100}}, lineColor={0,0,0}),
         Text(
           extent={{-46,96},{54,70}},

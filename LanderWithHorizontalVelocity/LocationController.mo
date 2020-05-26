@@ -27,7 +27,7 @@ model LocationController
     annotation (Placement(transformation(extent={{-68,20},{-48,40}})));
   Modelica.Blocks.Math.Gain Kp1(k=-1)
     annotation (Placement(transformation(extent={{-42,26},{-34,34}})));
-equation 
+equation
 
   connect(const1.y, add4.u1) annotation (Line(points={{-137.4,36},{-132,36},{-132,
           30},{-126,30}}, color={0,0,127}));
@@ -55,16 +55,11 @@ equation
     annotation (Line(points={{-33.6,30},{-27.6,30}}, color={0,0,127}));
   annotation (Diagram(coordinateSystem(extent={{-170,-60},{30,140}})), Icon(
         coordinateSystem(extent={{-170,-60},{30,140}}), graphics={
-        Bitmap(extent={{-146,-50},{2,80}}, fileName="modelica://FinalProject/Location.JPG"),
+        Bitmap(extent={{-146,-50},{2,80}}, fileName=
+              "modelica://RocketLanding/Resources/Images/Location.jpg"),
         Text(
           extent={{-150,132},{6,96}},
           lineColor={0,0,0},
           textString="%name"),
         Rectangle(extent={{-170,140},{30,-60}}, lineColor={0,0,0})}));
 end LocationController;
-
-
-
-
-
-
